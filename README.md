@@ -31,7 +31,7 @@ Here we provide the performance of the model and its corresponding weights.
 | Phoenix14T |  19.0  |  19.4  | [[huggingface]](https://huggingface.co/datasets/xhonghu/CESMM/tree/main/work_dirt/phoenix2014-T) |
 | CSL-Daily  |  27.5  |  26.8  | [[huggingface]](https://huggingface.co/datasets/xhonghu/CESMM/tree/main/work_dirt/CSL-Daily) |
 
-### Evaluate (Taking the PT dataset as an example)
+### Evaluate (Taking the Phoenix2014 dataset as an example)
 Model consensus integration evaluation:
 ```
 python main.py --phase ensemble --dataset phoenix2014
