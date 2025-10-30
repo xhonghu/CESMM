@@ -1,0 +1,10 @@
+dataset_root: /new_home/csl-daily/
+gloss:
+  gloss2id_file: ./preprocess/CSL-Daily/gloss2ids.pkl
+
+keypoint: /home/hhx22/CSLR/Keypoint/Data/CSL-Daily/CSL-Daily
+
+load_keypoint_weights:  ./work_dirt/CSL-Daily/keypoint/best_model.pt
+load_bone_weights:  ./work_dirt/CSL-Daily/bone/best_model.pt
+load_keypoint_motion_weights:  ./work_dirt/CSL-Daily/keypoint_motion/best_model.pt
+load_bone_motion_weights:  ./work_dirt/CSL-Daily/bone_motion/best_model.pt

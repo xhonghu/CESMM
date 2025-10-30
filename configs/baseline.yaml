@@ -1,0 +1,57 @@
+feeder: dataloader_video.BaseFeeder
+phase: train
+# train
+# test
+# ensemble
+
+dataset:  phoenix2014-T
+# phoenix2014-T
+# CSL-Daily
+# phoenix2014
+
+input_type: keypoint
+# keypoint
+# bone
+# keypoint_motion
+# bone_motion
+
+work_dir: ./work_dirt/
+batch_size: 8
+#Notice CSL-Daily dataset set batch_size: 16
+random_seed: 0 
+test_batch_size: 8
+num_worker: 12
+device: 1
+log_interval: 10000
+eval_interval: 1
+save_interval: 10
+ 
+loss_weights:
+  SeqCTC: 1.0 
+  ConvCTC: 1.0
+  Dist: 25.0
+
+load_weights:  False
+load_checkpoints:  False
+
+optimizer_args:
+  optimizer: Adam
+  learning_rate:
+    base_lr: 1.0e-03
+  step: [25, 40]
+  learning_ratio: 1
+  scheduler: cosine   #multistep  #Cosine
+  eta_min: 0.0 
+  weight_decay: 0.001
+  start_epoch: 0
+  num_epoch: 100 #100
+  nesterov: False
+  gamma: 0.2
+
+feeder_args:
+  mode: 'train'
+
+model: slr_network.SLRModel
+decode_mode: beam
+model_args:
+  weight_norm: True

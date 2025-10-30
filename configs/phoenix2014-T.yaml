@@ -1,0 +1,12 @@
+dataset_root: "/new_home/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/"
+gloss:
+  gloss2id_file: ./preprocess/phoenix2014-T/gloss2ids.pkl
+  lower_case: False
+  
+keypoint: /home/hhx22/CSLR/Keypoint/Data/Phoenix-2014T/Phoenix-2014T
+
+load_keypoint_weights:  ./work_dirt/phoenix2014-T/keypoint/best_model.pt
+load_bone_weights:  ./work_dirt/phoenix2014-T/bone/best_model.pt
+load_keypoint_motion_weights:  ./work_dirt/phoenix2014-T/keypoint_motion/best_model.pt
+load_bone_motion_weights:  ./work_dirt/phoenix2014-T/bone_motion/best_model.pt
+

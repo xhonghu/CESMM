@@ -1,0 +1,11 @@
+dataset_root: /new_home/phoenix2014-release/phoenix-2014-multisigner/ 
+gloss:
+  gloss2id_file: ./preprocess/phoenix2014/gloss2ids.pkl
+  lower_case: False
+
+keypoint: /home/hhx22/CSLR/Keypoint/Data/Phoenix-2014/Phoenix-2014
+
+load_keypoint_weights:  ./work_dirt/phoenix2014/keypoint/best_model.pt
+load_bone_weights:  ./work_dirt/phoenix2014/bone/best_model.pt
+load_keypoint_motion_weights:  ./work_dirt/phoenix2014/keypoint_motion/best_model.pt
+load_bone_motion_weights:  ./work_dirt/phoenix2014/bone_motion/best_model.pt
