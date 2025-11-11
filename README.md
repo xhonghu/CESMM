@@ -42,13 +42,13 @@ Evaluate a single flow model :
 ```
 test_signle:
 
-python main.py --input-type keypoint --dataset phoenix2014 --load-weights ./work_dirt/phoenix2014-T/keypoint/best_model.pt --phase test 
+python main.py --input-type keypoint --dataset phoenix2014-T --load-weights ./work_dirt/phoenix2014-T/keypoint/best_model.pt --phase test 
 
-python main.py --input-type bone --dataset phoenix2014 --load-weights ./work_dirt/phoenix2014-T/bone/best_model.pt --phase test
+python main.py --input-type bone --dataset phoenix2014-T --load-weights ./work_dirt/phoenix2014-T/bone/best_model.pt --phase test
 
-python main.py --input-type keypoint_motion --dataset phoenix2014 --load-weights ./work_dirt/phoenix2014-T/keypoint_motion/best_model.pt --phase test
+python main.py --input-type keypoint_motion --dataset phoenix2014-T --load-weights ./work_dirt/phoenix2014-T/keypoint_motion/best_model.pt --phase test
 
-python main.py --input-type bone_motion --dataset phoenix2014 --load-weights ./work_dirt/phoenix2014-T/bone_motion/best_model.pt --phase test
+python main.py --input-type bone_motion --dataset phoenix2014-T --load-weights ./work_dirt/phoenix2014-T/bone_motion/best_model.pt --phase test
 
 ```
 
